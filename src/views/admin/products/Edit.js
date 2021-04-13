@@ -1,6 +1,6 @@
 const Edit = () => {
     return ( 
-        <p>The edit page</p>
+        <p>The edit page🍳🍳</p>
      );
 }
  

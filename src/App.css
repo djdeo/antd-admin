@@ -38,3 +38,8 @@
     transform: rotate(360deg);
   }
 }
+
+html, body, .ant-layout {
+  height: 100%;
+  width: 100%;
+}

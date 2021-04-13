@@ -1,9 +1,16 @@
-import { useLocation } from "react-router-dom";
+import { Button } from "antd";
+import { setToken } from "../utils/auth";
 
-const Login = () => {
-  const location = useLocation();
-  console.log("🚀🚀🚀 ~ file: App.js ~ line 10 ~ App ~ location", location);
-  return <h2>This is Login🍕🍕</h2>;
+const Login = ({history}) => {
+  const loginUser = () => {
+    setToken('usertest')
+    history.push('/admin')
+  }
+  return (
+    <Button type="primary" onClick={() => loginUser()}>
+      Login
+    </Button>
+  );
 };
 
 export default Login;
