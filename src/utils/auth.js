@@ -1,5 +1,4 @@
 export function getToken() {
-    console.log('🍕🍕');
     return localStorage.getItem('token')
 }
 

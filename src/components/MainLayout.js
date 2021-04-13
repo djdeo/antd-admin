@@ -11,7 +11,7 @@ const MainLayout = ({ children, history }) => {
     <Layout>
       <Sider trigger={null} collapsible>
         <div className="logo" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={routes[0].path}>
           {routes.map((route) => (
             <Menu.Item key={route.path} onClick={item=>history.push(item.key)} >{route.title}</Menu.Item>
           ))}
